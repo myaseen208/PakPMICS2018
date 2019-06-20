@@ -1,0 +1,452 @@
+#' @title Multiple Indicator Cluster Survey (MICS) 2018 Child Questionnaire Data for Punjab, Pakistan
+#' @description \code{PakPMICS2018ch} provides data set and function for exploration of Multiple Indicator Cluster Survey (MICS) 2017-18 Children Under Five questionnaire data for Punjab, Pakistan. The results of the present survey are critically important for the purposes of SDG monitoring, as the survey produces information on 32 global SDG indicators. The data was collected from 53,840 households selected at the second stage with systematic random sampling out of a sample of 2,692 clusters selected using Probability Proportional to size sampling. Six questionnaires were used in the survey:
+#' 1. a household questionnaire to collect basic demographic information on all de jure household members (usual residents), the household, and the dwelling;
+#' 2. a water quality testing questionnaire administered in three households in each cluster of the sample;
+#' 3. a questionnaire for individual women administered in each household to all women age 15-49 years;
+#' 4. a questionnaire for individual men administered in every second household to all men age 15-49 years;
+#' 5. an under-5 questionnaire, administered to mothers (or caretakers) of all children under 5 living in the household; and
+#' 6. a questionnaire for children age 5-17 years, administered to the mother (or caretaker) of one randomly selected child age 5-17 years living in the household.
+#' @format A data frame with 42408 rows and 420 variables:
+#' \describe{
+#'    \item{\code{HH1}}{Cluster number}
+#'    \item{\code{HH2}}{Household number}
+#'    \item{\code{LN}}{Line number}
+#'    \item{\code{UF1}}{Cluster number}
+#'    \item{\code{UF2}}{Household number}
+#'    \item{\code{UF3}}{Child's line number}
+#'    \item{\code{UFINT}}{Interviewer number}
+#'    \item{\code{UF4}}{Mother / Caretaker's line number}
+#'    \item{\code{UF5}}{Interviewer number}
+#'    \item{\code{UF6}}{Supervisor's number}
+#'    \item{\code{UF7D}}{Day of interview}
+#'    \item{\code{UF7M}}{Month of interview}
+#'    \item{\code{UF7Y}}{Year of interview}
+#'    \item{\code{UF9}}{Household interviewer}
+#'    \item{\code{UF10}}{Consent}
+#'    \item{\code{UF17}}{Result of interview for children under 5}
+#'    \item{\code{UF8H}}{Start of interview - Hour}
+#'    \item{\code{UF8M}}{Start of interview - Minutes}
+#'    \item{\code{UF11H}}{End of interview - Hour}
+#'    \item{\code{UF11M}}{End of interview - Minutes}
+#'    \item{\code{UF12}}{Language of the questionnaire}
+#'    \item{\code{UF13}}{Language of the interview}
+#'    \item{\code{UF14}}{Native language of the respondent}
+#'    \item{\code{UF15}}{Translator used}
+#'    \item{\code{UFHINT}}{Household interviewer}
+#'    \item{\code{UB1D}}{Day of birth of child}
+#'    \item{\code{UB1M}}{Month of birth of child}
+#'    \item{\code{UB1Y}}{Year of birth of child}
+#'    \item{\code{UB2}}{Age of child}
+#'    \item{\code{UB6}}{Ever attended pre-school/katchi/ECE programe}
+#'    \item{\code{UB7}}{Attended early childhood education programme anytime since the beginning of current school year}
+#'    \item{\code{UB8}}{Currently attending early childhood education programme}
+#'    \item{\code{UB9}}{Covered by any health insurance}
+#'    \item{\code{UB10A}}{Health insurance - Public-health organization / Community-based health insurance}
+#'    \item{\code{UB10B}}{Health insurance - Health insurance through employer}
+#'    \item{\code{UB10C}}{Health insurance - Social security}
+#'    \item{\code{UB10D}}{Health insurance - Other privately purchased commercial health insurance}
+#'    \item{\code{UB10X}}{Health insurance - Other}
+#'    \item{\code{UB10NR}}{Health insurance - No response}
+#'    \item{\code{BR1}}{Birth certificate}
+#'    \item{\code{BR2}}{Birth registered}
+#'    \item{\code{BR3}}{Know how to register birth}
+#'    \item{\code{EC1}}{Number of children's books or picture books for child}
+#'    \item{\code{EC2A}}{Homemade toys}
+#'    \item{\code{EC2B}}{Toys from shops}
+#'    \item{\code{EC2C}}{Household objects or outside objects}
+#'    \item{\code{EC3A}}{Days left alone for more than one hour}
+#'    \item{\code{EC3B}}{Days left in the care of another child, that is someone less than 10 years old, for more than one hour}
+#'    \item{\code{EC5AA}}{Read books - Mother}
+#'    \item{\code{EC5AB}}{Read books - Father}
+#'    \item{\code{EC5AX}}{Read books - Other}
+#'    \item{\code{EC5AY}}{Read books - No one}
+#'    \item{\code{EC5ANR}}{Read books - No response}
+#'    \item{\code{EC5BA}}{Tell stories - Mother}
+#'    \item{\code{EC5BB}}{Tell stories - Father}
+#'    \item{\code{EC5BX}}{Tell stories - Other}
+#'    \item{\code{EC5BY}}{Tell stories - No one}
+#'    \item{\code{EC5BNR}}{Tell stories - No response}
+#'    \item{\code{EC5CA}}{Sang songs - Mother}
+#'    \item{\code{EC5CB}}{Sang songs - Father}
+#'    \item{\code{EC5CX}}{Sang songs - Other}
+#'    \item{\code{EC5CY}}{Sang songs - No one}
+#'    \item{\code{EC5CNR}}{Sang songs - No response}
+#'    \item{\code{EC5DA}}{Took outside - Mother}
+#'    \item{\code{EC5DB}}{Took outside - Father}
+#'    \item{\code{EC5DX}}{Took outside - Other}
+#'    \item{\code{EC5DY}}{Took outside - No one}
+#'    \item{\code{EC5DNR}}{Took outside - No response}
+#'    \item{\code{EC5EA}}{Played with - Mother}
+#'    \item{\code{EC5EB}}{Played with - Father}
+#'    \item{\code{EC5EX}}{Played with - Other}
+#'    \item{\code{EC5EY}}{Played with - No one}
+#'    \item{\code{EC5ENR}}{Played with - No response}
+#'    \item{\code{EC5FA}}{Named/counted - Mother}
+#'    \item{\code{EC5FB}}{Named/counted - Father}
+#'    \item{\code{EC5FX}}{Named/counted - Other}
+#'    \item{\code{EC5FY}}{Named/counted - No one}
+#'    \item{\code{EC5FNR}}{Named/counted - No response}
+#'    \item{\code{EC6}}{Child identifies at least ten letters of the alphabet}
+#'    \item{\code{EC7}}{Child reads at least four simple, popular words}
+#'    \item{\code{EC8}}{Child knows name and recognizes symbol of all numbers from 1-10}
+#'    \item{\code{EC9}}{Child able to pick up small object with 2 fingers}
+#'    \item{\code{EC10}}{Child sometimes too sick to play}
+#'    \item{\code{EC11}}{Child follows simple directions}
+#'    \item{\code{EC12}}{Child able to do something independently}
+#'    \item{\code{EC13}}{Child gets along well with other children}
+#'    \item{\code{EC14}}{Child kicks, bites or hits other children or adults}
+#'    \item{\code{EC15}}{Child gets distracted easily}
+#'    \item{\code{UCD2A}}{Took away privileges}
+#'    \item{\code{UCD2B}}{Explained why behaviour was wrong}
+#'    \item{\code{UCD2C}}{Shook child}
+#'    \item{\code{UCD2D}}{Shouted, yelled or screamed at child}
+#'    \item{\code{UCD2E}}{Gave child something else to do}
+#'    \item{\code{UCD2F}}{Spanked, hit or slapped child on bottom with bare hand}
+#'    \item{\code{UCD2G}}{Hit child on the bottom or elsewhere with belt, brush, stick, etc.}
+#'    \item{\code{UCD2H}}{Called child dumb, lazy or another name}
+#'    \item{\code{UCD2I}}{Hit or slapped child on the face, head or ears}
+#'    \item{\code{UCD2J}}{Hit or slapped child on the hand, arm or leg}
+#'    \item{\code{UCD2K}}{Beat child up as hard as one could}
+#'    \item{\code{UCD5}}{Child needs to be physically punished to be brought up properly}
+#'    \item{\code{UCF2}}{Child wear glasses}
+#'    \item{\code{UCF3}}{Child uses hearing aid}
+#'    \item{\code{UCF4}}{Child uses any equipment or receive assistance for walking}
+#'    \item{\code{UCF7}}{Child has difficulty seeing}
+#'    \item{\code{UCF9}}{Child has difficulty hearing sounds like people voices or music}
+#'    \item{\code{UCF11}}{Without using equipment or assistance child has difficulty walking}
+#'    \item{\code{UCF12}}{When using equipment or assistance child has difficulty walking}
+#'    \item{\code{UCF13}}{Compared with children of the same age, child has difficulty walking}
+#'    \item{\code{UCF14}}{Compared with children of the same age, child has difficulty picking upsmall objects with his/her hand}
+#'    \item{\code{UCF15}}{Child has difficulty understanding parent/caretaker}
+#'    \item{\code{UCF16}}{Child has difficulty being understood by parent/caretaker when speaks}
+#'    \item{\code{UCF17}}{Compared with children of the same age, child has difficulty learning things}
+#'    \item{\code{UCF18}}{Compared with children of the same age, child has difficulty playing}
+#'    \item{\code{UCF19}}{Compared with children of the same age, how much child kick, bite or hit other children or adults}
+#'    \item{\code{BD2}}{Child ever been breastfed}
+#'    \item{\code{BD3}}{Child still being breastfed}
+#'    \item{\code{BD4}}{Child drank anything from a bottle with a nipple yesterday}
+#'    \item{\code{BD5}}{Child drank ORS yesterday}
+#'    \item{\code{BD6}}{Child drank or ate vitamin or mineral supplements yesterday}
+#'    \item{\code{BD7A}}{Child drank plain water yesterday}
+#'    \item{\code{BD7B}}{Child drank juice or juice drinks yesterday}
+#'    \item{\code{BD7C}}{Child drank clear broth or clear soup yesterday}
+#'    \item{\code{BD7D}}{Child drank infant formula yesterday}
+#'    \item{\code{BD7D1}}{Times child drank infant formula}
+#'    \item{\code{BD7E}}{Child drank milk yesterday}
+#'    \item{\code{BD7E1}}{Times child drank milk}
+#'    \item{\code{BD7X}}{Child drank any other liquid yesterday}
+#'    \item{\code{BD8A}}{Child drank or ate yogurt yesterday}
+#'    \item{\code{BD8A1}}{Times drank or ate yogurt}
+#'    \item{\code{BD8B}}{Child ate fortified baby food cerelac etc. yesterday}
+#'    \item{\code{BD8C}}{Child ate foods made from grains yesterday}
+#'    \item{\code{BD8D}}{Child ate pumpkin, carrots, squash etc. yesterday}
+#'    \item{\code{BD8E}}{Child ate white potatoes, white yams, manioc, cassava etc. yesterday}
+#'    \item{\code{BD8F}}{Child ate green leafy vegetables yesterday}
+#'    \item{\code{BD8G}}{Child ate ripe mangoes, papayas, apricots etc. yesterday}
+#'    \item{\code{BD8H}}{Child ate other fruits or vegetables yesterday}
+#'    \item{\code{BD8I}}{Child ate liver, kidney, heart or other organ meat yesterday}
+#'    \item{\code{BD8J}}{Child ate meat, as beef, lamb,  goat, chicken, duck etc. or sausages made from these meats yesterday}
+#'    \item{\code{BD8K}}{Child ate eggs yesterday}
+#'    \item{\code{BD8L}}{Child ate fresh or dried fish or shellfish yesterday}
+#'    \item{\code{BD8M}}{Child ate beans, peas, lentils or nuts or any food made from these yesterday}
+#'    \item{\code{BD8N}}{Child ate cheese or other food made from milk yesterday}
+#'    \item{\code{BD8X}}{Child ate other solid, semi-solid or soft food yesterday}
+#'    \item{\code{BD9}}{Times child ate solid or semi-solid food}
+#'    \item{\code{BD8DUMMY}}{Dummy for BD8 explanation}
+#'    \item{\code{IM2}}{Vaccination card for child}
+#'    \item{\code{IM3}}{Ever had vaccination card}
+#'    \item{\code{IM5}}{Card - document seen}
+#'    \item{\code{IM6BD}}{Day of BCG immunization}
+#'    \item{\code{IM6BM}}{Month of BCG immunization}
+#'    \item{\code{IM6BY}}{Year of BCG immunization}
+#'    \item{\code{IM6P0D}}{Day of Polio (OPV) (at birth) immunization}
+#'    \item{\code{IM6P0M}}{Month of Polio (OPV) (at birth) immunization}
+#'    \item{\code{IM6P0Y}}{Year of Polio (OPV) (at birth) immunization}
+#'    \item{\code{IM6P1D}}{Day of Polio1 (OPV) immunization}
+#'    \item{\code{IM6P1M}}{Month of Polio1 (OPV) immunization}
+#'    \item{\code{IM6P1Y}}{Year of Polio1 (OPV) immunization}
+#'    \item{\code{IM6P2D}}{Day of Polio2 (OPV) immunization}
+#'    \item{\code{IM6P2M}}{Month of Polio2 (OPV) immunization}
+#'    \item{\code{IM6P2Y}}{Year of Polio2 (OPV) immunization}
+#'    \item{\code{IM6P3D}}{Day of Polio3 (OPV) immunization}
+#'    \item{\code{IM6P3M}}{Month of Polio3 (OPV) immunization}
+#'    \item{\code{IM6P3Y}}{Year of Polio3 (OPV) immunization}
+#'    \item{\code{IM6ID}}{Day of Polio (IPV) immunization}
+#'    \item{\code{IM6IM}}{Month of Polio (IPV) immunization}
+#'    \item{\code{IM6IY}}{Year of Polio (IPV) immunization}
+#'    \item{\code{IM6PENTA1D}}{Day of Pentavalent (DPTHibHepB) 1 immunization}
+#'    \item{\code{IM6PENTA1M}}{Month of Pentavalent (DPTHibHepB) 1 immunization}
+#'    \item{\code{IM6PENTA1Y}}{Year of Pentavalent (DPTHibHepB) 1 immunization}
+#'    \item{\code{IM6PENTA2D}}{Day of Pentavalent (DPTHibHepB) 2 immunization}
+#'    \item{\code{IM6PENTA2M}}{Month of Pentavalent (DPTHibHepB) 2 immunization}
+#'    \item{\code{IM6PENTA2Y}}{Year of Pentavalent (DPTHibHepB) 2 immunization}
+#'    \item{\code{IM6PENTA3D}}{Day of Pentavalent (DPTHibHepB) 3 immunization}
+#'    \item{\code{IM6PENTA3M}}{Month of Pentavalent (DPTHibHepB) 3 immunization}
+#'    \item{\code{IM6PENTA3Y}}{Year of Pentavalent (DPTHibHepB) 3 immunization}
+#'    \item{\code{IM6PCV1D}}{Day of Pneumococcal (Conjugate) 1 immunization}
+#'    \item{\code{IM6PCV1M}}{Month of Pneumococcal (Conjugate) 1 immunization}
+#'    \item{\code{IM6PCV1Y}}{Year of Pneumococcal (Conjugate) 1 immunization}
+#'    \item{\code{IM6PCV2D}}{Day of Pneumococcal (Conjugate) 2 immunization}
+#'    \item{\code{IM6PCV2M}}{Month of Pneumococcal (Conjugate) 2 immunization}
+#'    \item{\code{IM6PCV2Y}}{Year of Pneumococcal (Conjugate) 2 immunization}
+#'    \item{\code{IM6PCV3D}}{Day of Pneumococcal (Conjugate) 3 immunization}
+#'    \item{\code{IM6PCV3M}}{Month of Pneumococcal (Conjugate) 3 immunization}
+#'    \item{\code{IM6PCV3Y}}{Year of Pneumococcal (Conjugate) 3 immunization}
+#'    \item{\code{IM6M1D}}{Day of Measles-I immunization}
+#'    \item{\code{IM6M1M}}{Month of Measles-I immunization}
+#'    \item{\code{IM6M1Y}}{Year of Measles-I immunization}
+#'    \item{\code{IM6M2D}}{Day of Measles-II immunization}
+#'    \item{\code{IM6M2M}}{Month of Measles-II immunization}
+#'    \item{\code{IM6M2Y}}{Year of Measles-II immunization}
+#'    \item{\code{IM8}}{Participate in any previous campaign}
+#'    \item{\code{IM9}}{Child received any other vaccinations during campaigns, immunization days or child health days}
+#'    \item{\code{IM11}}{Child ever received any vaccinations}
+#'    \item{\code{IM12}}{Participate in previous polio campaign}
+#'    \item{\code{IM14}}{Child ever given BCG vaccination}
+#'    \item{\code{IM16}}{Child ever given Polio drops}
+#'    \item{\code{IM17}}{Polio drops in the first two weeks after birth}
+#'    \item{\code{IM18}}{Times received Polio drops}
+#'    \item{\code{IM19}}{Child got injection against Polio with last Polio drops}
+#'    \item{\code{IM20}}{Child ever given Pentavelent vaccination}
+#'    \item{\code{IM21}}{Times received Pentavelent vaccination}
+#'    \item{\code{IM22}}{Child ever given Pneumococcal Conjugate vaccination}
+#'    \item{\code{IM23}}{Times received Pneumococcal Conjugate vaccination}
+#'    \item{\code{IM26}}{Child ever given Measles-I & Measles-II vaccination}
+#'    \item{\code{IM26A}}{Number of times}
+#'    \item{\code{VS1}}{Received a vitamin a dose like (this/any of these) within the last 6 months}
+#'    \item{\code{CA1}}{Child had diarrhoea in last 2 weeks}
+#'    \item{\code{CA3}}{Child drank less or more during diarrhoea}
+#'    \item{\code{CA4}}{Child ate less or more during diarrhoea}
+#'    \item{\code{CA5}}{Sought advice or treatment for the diarrhoea from any source}
+#'    \item{\code{CA6A}}{Place sought care: (public sector) Government hospital}
+#'    \item{\code{CA6B}}{Place sought care: (public sector) Government health centre}
+#'    \item{\code{CA6C}}{Place sought care: (public sector) Government health post/Dispensary}
+#'    \item{\code{CA6D}}{Place sought care: Lady health worker (LHW)}
+#'    \item{\code{CA6E}}{Place sought care: (public sector) Mobile / Outreach clinic}
+#'    \item{\code{CA6H}}{Place sought care: Other public}
+#'    \item{\code{CA6I}}{Place sought care: Private hospital / clinic}
+#'    \item{\code{CA6J}}{Place sought care: Private physician}
+#'    \item{\code{CA6K}}{Place sought care: Private pharmacy}
+#'    \item{\code{CA6M}}{Place sought care: Mobile clinic}
+#'    \item{\code{CA6O}}{Place sought care: Other private medical}
+#'    \item{\code{CA6P}}{Place sought care: Relative / Friend}
+#'    \item{\code{CA6Q}}{Place sought care: Shop / Market / Street}
+#'    \item{\code{CA6R}}{Place sought care: Traditional practitioner}
+#'    \item{\code{CA6X}}{Place sought care: Other}
+#'    \item{\code{CA6NR}}{Place sought care: Missing}
+#'    \item{\code{CA7A}}{Child given ORS packet solution}
+#'    \item{\code{CA7B}}{Child given ORS fluid}
+#'    \item{\code{CA7C}}{Child given zinc tablets or syrup}
+#'    \item{\code{CA7D}}{Child given government-recommended hommade fluid}
+#'    \item{\code{CA9A}}{Place got ORS: (public sector) Government hospital}
+#'    \item{\code{CA9B}}{Place got ORS: (public sector) Government health centre}
+#'    \item{\code{CA9C}}{Place got ORS: (public sector) Government health post/DISPENSARY}
+#'    \item{\code{CA9D}}{Place got ORS: (public sector) LADY HEALTH WORKER (LHW)}
+#'    \item{\code{CA9E}}{Place got ORS: (public sector) Mobile / Outreach clinic}
+#'    \item{\code{CA9H}}{Place got ORS: Other public}
+#'    \item{\code{CA9I}}{Place got ORS: Private hospital / clinic}
+#'    \item{\code{CA9J}}{Place got ORS: Private physician}
+#'    \item{\code{CA9K}}{Place got ORS: Private pharmacy}
+#'    \item{\code{CA9M}}{Place got ORS: Mobile clinic}
+#'    \item{\code{CA9O}}{Place got ORS: Other private medical}
+#'    \item{\code{CA9P}}{Place got ORS: Relative / Friend}
+#'    \item{\code{CA9Q}}{Place got ORS: Shop / Market / Street}
+#'    \item{\code{CA9R}}{Place got ORS: Traditional practitioner}
+#'    \item{\code{CA9X}}{Place got ORS: Other}
+#'    \item{\code{CA9Z}}{Place got ORS: DK /Don't remember}
+#'    \item{\code{CA9NR}}{Place got ORS: Missing}
+#'    \item{\code{CA11A}}{Place got ORS: (public sector) Government hospital}
+#'    \item{\code{CA11B}}{Place got ORS: (public sector) Government health centre}
+#'    \item{\code{CA11C}}{Place got ORS: (public sector) Government health post/Dispensary}
+#'    \item{\code{CA11D}}{Place got ORS: (public sector) LADY HEALTH WORKER (LHW)}
+#'    \item{\code{CA11E}}{Place got ORS: (public sector) Mobile / Outreach clinic}
+#'    \item{\code{CA11H}}{Place got ORS: Other public}
+#'    \item{\code{CA11I}}{Place got ORS: Private hospital / clinic}
+#'    \item{\code{CA11J}}{Place got ORS: Private physician}
+#'    \item{\code{CA11K}}{Place got ORS: Private pharmacy}
+#'    \item{\code{CA11M}}{Place got ORS: Mobile clinic}
+#'    \item{\code{CA11O}}{Place got ORS: Other private medical}
+#'    \item{\code{CA11P}}{Place got ORS: Relative / Friend}
+#'    \item{\code{CA11Q}}{Place got ORS: Shop / Market / Street}
+#'    \item{\code{CA11R}}{Place got ORS: Traditional practitioner}
+#'    \item{\code{CA11X}}{Place got ORS: Other}
+#'    \item{\code{CA11Z}}{Place got ORS: DK /Don't remember}
+#'    \item{\code{CA11NR}}{Place got ORS: Missing}
+#'    \item{\code{CA12}}{Anything else given to treat the diarrhoea}
+#'    \item{\code{CA13A}}{Other treatment: (Pill or Syrup) Antibiotic}
+#'    \item{\code{CA13B}}{Other treatment (pill or syrup): Antimotility (anti-diarrhoea)}
+#'    \item{\code{CA13G}}{Other treatment (pill or syrup): Other pill or syrup}
+#'    \item{\code{CA13H}}{Other treatment (pill or syrup): Unknown pill or syrup}
+#'    \item{\code{CA13L}}{Other treatment (injection): Antibiotic}
+#'    \item{\code{CA13M}}{Other treatment (injection): Non-antibiotic}
+#'    \item{\code{CA13N}}{Other treatment (injection): Unknown injection}
+#'    \item{\code{CA13O}}{Other treatment: Intravenous (IV)}
+#'    \item{\code{CA13Q}}{Other treatment: Home remedy / Herbal medicine}
+#'    \item{\code{CA13X}}{Other treatment: Other}
+#'    \item{\code{CA13NR}}{Other treatment: Missing}
+#'    \item{\code{CA14}}{Child ill with fever in last 2 weeks}
+#'    \item{\code{CA15}}{Blood taken from finger or heel for testing}
+#'    \item{\code{CA16}}{Child ill with cough in last 2 weeks}
+#'    \item{\code{CA17}}{Difficulty breathing during illness with cough}
+#'    \item{\code{CA18}}{Symptoms due to problem in chest or blocked nose}
+#'    \item{\code{CA20}}{Sought advice or treatment for illness}
+#'    \item{\code{CA21A}}{Place sought care: (public sector) Government hospital}
+#'    \item{\code{CA21B}}{Place sought care: (public sector) Government health centre}
+#'    \item{\code{CA21C}}{Place sought care: (public sector) Government health post}
+#'    \item{\code{CA21D}}{Place sought care: (public sector) Community health worker (Non Government)}
+#'    \item{\code{CA21E}}{Place sought care: (public sector) Mobile / Outreach clinic}
+#'    \item{\code{CA21H}}{Place sought care: Other public}
+#'    \item{\code{CA21I}}{Place sought care: Private hospital / clinic}
+#'    \item{\code{CA21J}}{Place sought care: Private physician}
+#'    \item{\code{CA21K}}{Place sought care: Private pharmacy}
+#'    \item{\code{CA21M}}{Place sought care: Mobile clinic}
+#'    \item{\code{CA21O}}{Place sought care: Other private medical}
+#'    \item{\code{CA21P}}{Place sought care: Relative / Friend}
+#'    \item{\code{CA21Q}}{Place sought care: Shop / Market / Street}
+#'    \item{\code{CA21R}}{Place sought care: Traditional practitioner}
+#'    \item{\code{CA21X}}{Place sought care: Other}
+#'    \item{\code{CA21NR}}{Place sought care: Missing}
+#'    \item{\code{CA22}}{Given medicine to treat this illness}
+#'    \item{\code{CA23A}}{Medicine: Anti-Malarials: Artemisinin combination therapy (ACT)}
+#'    \item{\code{CA23B}}{Medicine: Anti-Malarials: SP / Fansidar}
+#'    \item{\code{CA23C}}{Medicine: Anti-Malarials: Chloroquine}
+#'    \item{\code{CA23D}}{Medicine: Anti-Malarials: Amodiaquine}
+#'    \item{\code{CA23E}}{Medicine: Anti-Malarials: Quinine pills}
+#'    \item{\code{CA23F}}{Medicine: Anti-Malarials: Quinine injection / IV}
+#'    \item{\code{CA23G}}{Medicine: Anti-Malarials: Artesunate rectal}
+#'    \item{\code{CA23H}}{Medicine: Anti-Malarials: Artesunate injection / IV}
+#'    \item{\code{CA23K}}{Medicine: Anti-Malarials: Other anti-malarial}
+#'    \item{\code{CA23L}}{Medicine: Antibiotics: Amoxicillin}
+#'    \item{\code{CA23M}}{Medicine: Antibiotics: Cotrimoxazole}
+#'    \item{\code{CA23N}}{Medicine: Antibiotics: Other antibiotic pill / syrup}
+#'    \item{\code{CA23O}}{Medicine: Antibiotics: Other antibiotic injection / IV}
+#'    \item{\code{CA23R}}{Medicine: Paracetamol / Panadol / Acetaminophen}
+#'    \item{\code{CA23S}}{Medicine: Aspirin}
+#'    \item{\code{CA23T}}{Medicine: Ibupropfen}
+#'    \item{\code{CA23X}}{Medicine: Other}
+#'    \item{\code{CA23Z}}{Medicine: DK}
+#'    \item{\code{CA23NR}}{Medicine: Missing}
+#'    \item{\code{CA25A}}{Place got antibiotics:(public sector) Government hospital}
+#'    \item{\code{CA25B}}{Place got antibiotics: (public sector) Government health centre}
+#'    \item{\code{CA25C}}{Place got antibiotics: (public sector) Government health post/Dispensary}
+#'    \item{\code{CA25D}}{Place got antibiotics: (public sector) Lady Health Worker (LHW)}
+#'    \item{\code{CA25E}}{Place got antibiotics: (public sector) Mobile / Outreach clinic}
+#'    \item{\code{CA25H}}{Place got antibiotics: Other public}
+#'    \item{\code{CA25I}}{Place got antibiotics: Private hospital / clinic}
+#'    \item{\code{CA25J}}{Place got antibiotics: Private physician}
+#'    \item{\code{CA25K}}{Place got antibiotics: Private pharmacy}
+#'    \item{\code{CA25M}}{Place got antibiotics: Mobile clinic}
+#'    \item{\code{CA25O}}{Place got antibiotics: Other private medical}
+#'    \item{\code{CA25P}}{Place got antibiotics: Relative / Friend}
+#'    \item{\code{CA25Q}}{Place got antibiotics: Shop / Market / Street}
+#'    \item{\code{CA25R}}{Place got antibiotics: Traditional practitioner}
+#'    \item{\code{CA25X}}{Place got antibiotics: Other}
+#'    \item{\code{CA25Z}}{Place got antibiotics: DK / Don't remember}
+#'    \item{\code{CA25NR}}{Place got antibiotics: Missing}
+#'    \item{\code{CA27A}}{Place got anti-malarials:(public sector) Government hospital}
+#'    \item{\code{CA27B}}{Place got anti-malarials: (public sector) Government health centre}
+#'    \item{\code{CA27C}}{Place got anti-malarials: (public sector) Government health post/Dispensary}
+#'    \item{\code{CA27D}}{Place got anti-malarials: (public sector) Lady Health Worker (LHW)}
+#'    \item{\code{CA27E}}{Place got anti-malarials: (public sector) Mobile / Outreach clinic}
+#'    \item{\code{CA27H}}{Place got anti-malarials: Other public}
+#'    \item{\code{CA27I}}{Place got anti-malarials: Private hospital / clinic}
+#'    \item{\code{CA27J}}{Place got anti-malarials: Private physician}
+#'    \item{\code{CA27K}}{Place got anti-malarials: Private pharmacy}
+#'    \item{\code{CA27M}}{Place got anti-malarials: Mobile clinic}
+#'    \item{\code{CA27O}}{Place got anti-malarials: Other private medical}
+#'    \item{\code{CA27P}}{Place got anti-malarials: Relative / Friend}
+#'    \item{\code{CA27Q}}{Place got anti-malarials: Shop / Market / Street}
+#'    \item{\code{CA27R}}{Place got anti-malarials: Traditional practitioner}
+#'    \item{\code{CA27X}}{Place got anti-malarials: Other}
+#'    \item{\code{CA27Z}}{Place got anti-malarials: DK / Don't remember}
+#'    \item{\code{CA27NR}}{Place got anti-malarials: Missing}
+#'    \item{\code{CA29}}{Got medicine after fever started}
+#'    \item{\code{CA31}}{What was done to dispose of the stools}
+#'    \item{\code{AN1}}{Cluster number}
+#'    \item{\code{AN2}}{Household number}
+#'    \item{\code{AN3}}{Child's line number}
+#'    \item{\code{AN4}}{Age of child}
+#'    \item{\code{AN5}}{Mother's line number}
+#'    \item{\code{AN6}}{Interviewer number}
+#'    \item{\code{AN7}}{Measurer's identification code}
+#'    \item{\code{AN8}}{Child's weight (kilograms)}
+#'    \item{\code{AN9}}{Child undressed to the minimum}
+#'    \item{\code{AN11}}{Child's length or height (centimetres)}
+#'    \item{\code{AN12}}{Child measured lying or standing}
+#'    \item{\code{AN13D}}{Day of measurement}
+#'    \item{\code{AN13M}}{Month of measurement}
+#'    \item{\code{AN13Y}}{Year of measurement}
+#'    \item{\code{HH4}}{Supervisor number}
+#'    \item{\code{HH6}}{Area}
+#'    \item{\code{HL4}}{Sex}
+#'    \item{\code{ED5A}}{Highest level of education attended}
+#'    \item{\code{ED5B}}{Highest grade attended at that level}
+#'    \item{\code{CDOI}}{Date of interview child (CMC)}
+#'    \item{\code{CDOB}}{Date of birth of child (CMC)}
+#'    \item{\code{CAGE}}{Age (months)}
+#'    \item{\code{CAGE_6}}{Age}
+#'    \item{\code{CAGE_11}}{Age}
+#'    \item{\code{CAGED}}{Age in days}
+#'    \item{\code{HAP}}{Height for age percentile NCHS}
+#'    \item{\code{HAZ}}{Height for age z-score NCHS}
+#'    \item{\code{HAM}}{Height for age percent of reference median NCHS}
+#'    \item{\code{WAP}}{Weight for age percentile NCHS}
+#'    \item{\code{WAZ}}{Weight for age z-score NCHS}
+#'    \item{\code{WAM}}{Weight for age percent of reference median NCHS}
+#'    \item{\code{WHP}}{Weight for height percentile NCHS}
+#'    \item{\code{WHZ}}{Weight for height z-score NCHS}
+#'    \item{\code{WHM}}{Weight for height percent of reference median NCHS}
+#'    \item{\code{FLAG}}{Flag for anthropometric indicators}
+#'    \item{\code{BMI}}{Body Mass Index WHO}
+#'    \item{\code{ZBMI}}{Body Mass Index z-score WHO}
+#'    \item{\code{HAZ2}}{Height for age z-score WHO}
+#'    \item{\code{WAZ2}}{Weight for age z-score WHO}
+#'    \item{\code{WHZ2}}{Weight for height z-score WHO}
+#'    \item{\code{HAZFLAG}}{Height for age flag WHO}
+#'    \item{\code{WAZFLAG}}{Weight for age flag WHO}
+#'    \item{\code{WHZFLAG}}{Weight for height flag WHO}
+#'    \item{\code{BMIFLAG}}{BMI flag WHO}
+#'    \item{\code{WHZNOAGE}}{Weight for height - Age flag WHO}
+#'    \item{\code{wscore}}{Combined wealth score}
+#'    \item{\code{windex5}}{Wealth index quintile}
+#'    \item{\code{windex10}}{Percentile Group of com1}
+#'    \item{\code{wscoreu}}{Urban wealth score}
+#'    \item{\code{windex5u}}{Urban wealth index quintile}
+#'    \item{\code{windex10u}}{Percentile Group of urb1}
+#'    \item{\code{wscorer}}{Rural wealth score}
+#'    \item{\code{windex5r}}{Rural wealth index quintile}
+#'    \item{\code{windex10r}}{Percentile Group of rur1}
+#'    \item{\code{division}}{Division}
+#'    \item{\code{majorcity}}{majorcity}
+#'    \item{\code{hh6r}}{Area}
+#'    \item{\code{suburban}}{ }
+#'    \item{\code{hh7}}{Districts}
+#'    \item{\code{melevel}}{Mother's Education}
+#'    \item{\code{cinsurance}}{Health insurance}
+#'    \item{\code{cdisability}}{Functional difficulties (age 2-4 years)}
+#'    \item{\code{caretakerdis}}{Mother's functional disabilities (age 18-49 years)}
+#'    \item{\code{chweight}}{Children under 5's sample weight}
+#'    \item{\code{stratum}}{stratum}
+#'    \item{\code{psu}}{psu}
+#'   }
+#'
+#' @author
+#'  \enumerate{
+#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   }
+#'
+#' @references
+#' \enumerate{
+#'   \item UNICEF MICS (\url{http://www.mics.unicef.org/surveys}).
+#'  }
+#'
+#' @import tibble
+#'
+#' @examples
+#' # Loading PakPMICS2018ch
+#'  \dontrun{
+#'  load(url(
+#'   "https://github.com/myaseen208/PakPMICS2018Data/raw/master/PakPMICS2018ch.RData"
+#'   ))
+#'  }
+NULL
