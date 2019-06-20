@@ -1,4 +1,5 @@
 #' @title Multiple Indicator Cluster Survey (MICS) 2018 Child Questionnaire Data for Punjab, Pakistan
+#' @name  PakPMICS2018wm
 #' @description \code{PakPMICS2018wm} data of Child questionnaire, MICS Punjab, 2014.
 #' @format A data frame with 157899 rows and 62 variables:
 #' \describe{
