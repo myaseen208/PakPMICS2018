@@ -19,7 +19,7 @@ v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/PakPMICS2018?color=green)](https://CRAN.R-project.org/package=PakPMICS2018)
 <!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PakPMICS2018) -->
 
-[![develVersion](https://img.shields.io/badge/devel%20version-0.1.0-orange.svg)](https://github.com/myaseen208/PakPMICS2018)
+[![develVersion](https://img.shields.io/badge/devel%20version-1.0.0-orange.svg)](https://github.com/myaseen208/PakPMICS2018)
 
 <!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PakPMICS2018/total.svg)] -->
 
@@ -70,17 +70,6 @@ if (!require("remotes")) install.packages("remotes")
 remotes::install_github("myaseen208/PakPMICS2018")
 ```
 
-## Detailed tutorial
-
-For a detailed tutorial (vignette) on how to used this package type:
-
-``` r
-browseVignettes(package = "PakPMICS2018")
-```
-
-The vignette for the latest version is also available
-[online](https://myaseen208.github.io/PakPMICS2018/articles/IntroPakPMICS2018.html).
-
 ## What’s new
 
 To know whats new in this version type:
@@ -99,30 +88,33 @@ news(package = "PakPMICS2018")
 
 ## Citing `PakPMICS2018`
 
-To cite the methods in the package
-    use:
+To cite the methods in the package use:
 
 ``` r
 citation("PakPMICS2018")
 ```
 
-    Warning in citation("PakPMICS2018"): no date field in DESCRIPTION file of
-    package 'PakPMICS2018'
-    
-    To cite package 'PakPMICS2018' in publications use:
-    
-      Muhammad Yaseen (2019). PakPMICS2018: Multiple Indicator Cluster
-      Survey (MICS) 2017-18 Data for Punjab, Pakistan.
-      https://github.com/myaseen208/PakPMICS2018,
-      https://myaseen208.github.io/PakPMICS2018/.
-    
-    A BibTeX entry for LaTeX users is
-    
-      @Manual{,
-        title = {PakPMICS2018: Multiple Indicator Cluster Survey (MICS) 2017-18 Data for
-    Punjab, Pakistan},
-        author = {{Muhammad Yaseen}},
-        year = {2019},
-        note = {https://github.com/myaseen208/PakPMICS2018,
-    https://myaseen208.github.io/PakPMICS2018/},
-      }
+``` 
+
+To cite the R package 'PakPMICS2018' in publications use:
+
+  Muhammad Yaseen (2020).  PakPMICS2018: Multiple Indicator Cluster
+  Survey (MICS) 2017-18 Data for Punjab, Pakistan.R package version
+  1.0.0 ,
+  https://myaseen208.github.io/PakPMICS2018/https://cran.r-project.org/package=PakPMICS2018.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {PakPMICS2018: Multiple Indicator Cluster Survey (MICS) 2017-18 Data for Punjab, Pakistan},
+    author = {{Muhammad Yaseen}},
+    year = {2020},
+    note = {R package version 1.0.0},
+    note = {https://myaseen208.github.io/PakPMICS2018/ },
+    note = {https://cran.r-project.org/package=PakPMICS2018},
+  }
+
+This free and open-source software implements academic research by the
+authors and co-workers. If you use it, please support the project by
+citing the package.
+```
