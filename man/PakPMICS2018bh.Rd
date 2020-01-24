@@ -77,6 +77,7 @@
  load(url(
   "https://github.com/myaseen208/PakPMICS2018Data/raw/master/PakPMICS2018bh.RData"
   ))
+  PakPMICS2018bh
  }
 }
 \references{

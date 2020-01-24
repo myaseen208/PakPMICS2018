@@ -1,0 +1,58 @@
+template:
+  params:
+    bootswatch: united
+    ganalytics: UA-116716530-2
+    docsearch:
+      api_key: bdafb7ea4490644e670f470ee3ef537f
+      index_name: PakPMICS2018
+
+development:
+  mode: unreleased
+
+url: https://myaseen208.github.io/PakPMICS2018/
+
+navbar:
+  title: PakPMICS2018
+  type: default
+  left:
+    - icon: fa-home fa-lg
+      text: Home
+      href: index.html
+    - icon: fa-code
+      text: Reference
+      href: reference/index.html
+    - icon: fa-file-o
+      text: MICS6 Questionnaires
+      menu:
+      - text: "Household"
+        href: articles/MICS6HouseholdQuestionnaire.pdf
+      - text: "Children under Five"
+        href: articles/MICS6QuestionnaireforChildrenUnderFive.pdf
+      - text: "Children Age 5-17"
+        href: articles/MICS6QuestionnaireforChildrenAge5-17.pdf
+      - text: "Men"
+        href: articles/MICS6QuestionnaireforIndividualMen.pdf
+      - text: "Women"
+        href: articles/MICS6QuestionnaireforIndividualWomen.pdf
+      - text: "Water Quality Testing"
+        href: articles/MICS6WaterQualityTestingQuestionnaire.pdf
+    - icon: fa-newspaper-o
+      text: News
+      href: news/index.html
+  right:
+    - icon: fa-github-alt
+      text: Github
+      href: https://github.com/myaseen208/PakPMICS2018
+
+reference:
+    - title: Core anlaysis function
+      contents:
+         - '`PakPMICS2018bh`'
+         - '`PakPMICS2018ch`'
+         - '`PakPMICS2018fs`'
+         - '`PakPMICS2018hh`'
+         - '`PakPMICS2018hl`'
+         - '`PakPMICS2018mm`'
+         - '`PakPMICS2018mn`'
+         - '`PakPMICS2018wm`'
+

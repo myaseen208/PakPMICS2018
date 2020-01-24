@@ -127,5 +127,6 @@
 #'  load(url(
 #'   "https://github.com/myaseen208/PakPMICS2018Data/raw/master/PakPMICS2018hl.RData"
 #'   ))
+#'   PakPMICS2018hl
 #'  }
 NULL

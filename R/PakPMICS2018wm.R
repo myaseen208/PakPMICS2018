@@ -443,5 +443,6 @@
 #'  load(url(
 #'   "https://github.com/myaseen208/PakPMICS2018Data/raw/master/PakPMICS2018wm.RData"
 #'   ))
+#'   PakPMICS2018wm
 #'  }
 NULL
