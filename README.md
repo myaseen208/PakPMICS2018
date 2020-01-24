@@ -28,7 +28,6 @@ WIP](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatu
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Last-changedate](https://img.shields.io/badge/last%20change-2020--01--24-yellowgreen.svg)](https://github.com/myaseen208/PakPMICS2018)
 [![Rdoc](http://www.rdocumentation.org/badges/version/PakPMICS2018)](http://www.rdocumentation.org/packages/PakPMICS2018)
-[![Analytics](https://pro-pulsar-193905.appspot.com/UA-116716530-1/welcome-page)](https://github.com/myaseen208/google-analytics-beacon)
 
 -----
 
