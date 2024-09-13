@@ -1,4 +1,5 @@
 template:
+  bootstrap: 5
   params:
     bootswatch: united
     ganalytics: UA-116716530-2
@@ -9,7 +10,7 @@ template:
 development:
   mode: unreleased
 
-url: https://myaseen208.github.io/PakPMICS2018/
+url: https://myaseen208.com/PakPMICS2018/
 
 navbar:
   title: PakPMICS2018
@@ -40,9 +41,18 @@ navbar:
       text: News
       href: news/index.html
   right:
-    - icon: fa-github-alt
-      text: Github
+    - text: "GitHub"
       href: https://github.com/myaseen208/PakPMICS2018
+      icon: fa-github
+      aria-label: "GitHub repository"
+    - text: "ResearchGate"
+      href: https://www.researchgate.net/profile/Muhammad_Yaseen10
+      icon: fa-github
+      aria-label: "ResearchGate"
+    - text: "Twitter"
+      href: https://twitter.com/myaseen208
+      icon: "fab fa-twitter"
+      aria-label: "Twitter"
 
 reference:
     - title: Core anlaysis function
@@ -55,4 +65,3 @@ reference:
          - '`PakPMICS2018mm`'
          - '`PakPMICS2018mn`'
          - '`PakPMICS2018wm`'
-

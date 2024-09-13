@@ -3,7 +3,8 @@
 \name{PakPMICS2018mn}
 \alias{PakPMICS2018mn}
 \title{Multiple Indicator Cluster Survey (MICS) 2018 Child Questionnaire Data for Punjab, Pakistan}
-\format{A data frame with 157899 rows and 62 variables:
+\format{
+A data frame with 157899 rows and 62 variables:
 \describe{
    \item{\code{HH1}}{Cluster number}
    \item{\code{HH2}}{Household number}
@@ -222,7 +223,8 @@
    \item{\code{mnweight}}{Men's sample weight}
    \item{\code{stratum}}{stratum}
    \item{\code{psu}}{psu}
-  }}
+  }
+}
 \description{
 \code{PakPMICS2018mn} data of Child questionnaire, MICS Punjab, 2014.
 }
@@ -237,11 +239,11 @@
 }
 \references{
 \enumerate{
-  \item UNICEF MICS (\url{http://www.mics.unicef.org/surveys}).
+  \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
  }
 }
 \author{
 \enumerate{
-  \item{Muhammad Yaseen } {(\email{myaseen208@gmail.com})}
+  \item  Muhammad Yaseen (\email{myaseen208@gmail.com})
   }
 }

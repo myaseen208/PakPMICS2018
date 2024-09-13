@@ -111,12 +111,12 @@
 #'
 #' @author
 #'  \enumerate{
-#'   \item{Muhammad Yaseen } {(\email{myaseen208@@gmail.com})}
+#'   \item  Muhammad Yaseen (\email{myaseen208@@gmail.com})
 #'   }
 #'
 #' @references
 #' \enumerate{
-#'   \item UNICEF MICS (\url{http://www.mics.unicef.org/surveys}).
+#'   \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
 #'  }
 #'
 #' @import tibble

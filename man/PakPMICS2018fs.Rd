@@ -3,7 +3,8 @@
 \name{PakPMICS2018fs}
 \alias{PakPMICS2018fs}
 \title{Multiple Indicator Cluster Survey (MICS) 2018 Children Age 5-17 Questionnaire Data for Punjab, Pakistan}
-\format{A data frame with 37052 rows and 276 variables:
+\format{
+A data frame with 37052 rows and 276 variables:
 \describe{
    \item{\code{HH1}}{Cluster number}
    \item{\code{HH2}}{Household number}
@@ -281,7 +282,8 @@
    \item{\code{fshweight}}{Children 5-17's household sample weight}
    \item{\code{stratum}}{stratum}
    \item{\code{psu}}{psu}
-  }}
+  }
+}
 \description{
 \code{PakPMICS2018fs} provides data set and function for exploration of Multiple Indicator Cluster Survey (MICS) 2017-18 Children Age 5-17 questionnaire data for Punjab, Pakistan. The results of the present survey are critically important for the purposes of SDG monitoring, as the survey produces information on 32 global SDG indicators. The data was collected from 53,840 households selected at the second stage with systematic random sampling out of a sample of 2,692 clusters selected using Probability Proportional to size sampling. Six questionnaires were used in the survey:
 1. a household questionnaire to collect basic demographic information on all de jure household members (usual residents), the household, and the dwelling;
@@ -302,11 +304,11 @@
 }
 \references{
 \enumerate{
-  \item UNICEF MICS (\url{http://www.mics.unicef.org/surveys}).
+  \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
  }
 }
 \author{
 \enumerate{
-  \item{Muhammad Yaseen } {(\email{myaseen208@gmail.com})}
+  \item  Muhammad Yaseen (\email{myaseen208@gmail.com})
   }
 }

@@ -1,30 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//index.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018bh.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018ch.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018fs.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018hh.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018hl.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018mm.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018mn.html</loc>
-  </url>
-  <url>
-    <loc>https://myaseen208.github.io/PakPMICS2018//reference/PakPMICS2018wm.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://myaseen208.com/PakPMICS2018/404.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/authors.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/index.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/news/index.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018bh.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018ch.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018fs.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018hh.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018hl.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018mm.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018mn.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/PakPMICS2018wm.html</loc></url>
+<url><loc>https://myaseen208.com/PakPMICS2018/reference/index.html</loc></url>
 </urlset>
+

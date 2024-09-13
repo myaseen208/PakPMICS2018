@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 devtools::load_all(".")
 ```
 
-###### Version : [`r getNamespaceVersion("PakPMICS2018")`](https://myaseen208.github.io/PakPMICS2018/); Copyright (C) 2019-2020: [UAF](http://uaf.edu.pk//); License: [GPL-2|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [`r getNamespaceVersion("PakPMICS2018")`](https://myaseen208.com/PakPMICS2018/); Copyright (C) 2019-2020: [UAF](https://web.uaf.edu.pk/); License: [GPL-2|GPL-3](https://www.r-project.org/Licenses/)
 
 
 ##### *Muhammad Yaseen*
@@ -39,10 +39,9 @@ cat(paste("[![develVersion](https://img.shields.io/badge/devel%20version-", dver
 ```
 
 <!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PakPMICS2018/total.svg)] -->
-[![Project Status: WIP](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
-[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Project Status: WIP](http://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](https://github.com/myaseen208/PakPMICS2018)
-[![Rdoc](http://www.rdocumentation.org/badges/version/PakPMICS2018)](http://www.rdocumentation.org/packages/PakPMICS2018)
 
 ***
 
@@ -79,7 +78,7 @@ news(package = "PakPMICS2018")
 
 [Github page](https://github.com/myaseen208/PakPMICS2018)
 
-[Documentation website](https://myaseen208.github.io/PakPMICS2018/)
+[Documentation website](https://myaseen208.com/PakPMICS2018/)
 
 
 

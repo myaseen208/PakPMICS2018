@@ -1,8 +1,8 @@
-pandoc: 2.3.1
-pkgdown: 1.4.1.9000
-pkgdown_sha: 134033d9d744c548c6fbe297bc0fbd1a2f498e83
+pandoc: 3.1.11
+pkgdown: 2.1.0.9000
+pkgdown_sha: 800340f4b1b6d5c8c0c3510ef34776436b14b298
 articles: {}
+last_built: 2024-09-13T23:47Z
 urls:
-  reference: https://myaseen208.github.io/PakPMICS2018//reference
-  article: https://myaseen208.github.io/PakPMICS2018//articles
-
+  reference: https://myaseen208.com/PakPMICS2018/reference
+  article: https://myaseen208.com/PakPMICS2018/articles

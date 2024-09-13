@@ -1,35 +1,8 @@
-citHeader("To cite the R package 'PakPMICS2018' in publications use:")
-
-if(!exists("meta") || is.null(meta))
-meta <- packageDescription("PakPMICS2018")
-
-year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
-if (!length(year)) {
- year <- format(packageDate("PakPMICS2018"), "%Y")
- }
-
-vers <- paste("R package version", meta$Version)
-
-citEntry(
-  entry  = "Manual"
-, title  = "PakPMICS2018: Multiple Indicator Cluster Survey (MICS) 2017-18 Data for Punjab, Pakistan"
-, author = personList(
-  person(c("Muhammad", "Yaseen"),  email = "myaseen208@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5923-1714"))
-            )
-, year = year
-, textVersion = paste(
-       "Muhammad Yaseen ("
-      , year
-      , ").  PakPMICS2018: Multiple Indicator Cluster Survey (MICS) 2017-18 Data for Punjab, Pakistan."
-      , vers
-      , "
-      , "
-      , "https://myaseen208.github.io/PakPMICS2018/"
-      , "https://cran.r-project.org/package=PakPMICS2018"
-      , "."
-      , sep = "")
-      , note = {c(paste(vers), "https://myaseen208.github.io/PakPMICS2018/ " , "https://cran.r-project.org/package=PakPMICS2018")})
-
-citFooter("This free and open-source software implements academic
-research by the authors and co-workers. If you use it, please support
-the project by citing the package.")
+bibentry(
+  "manual",
+  header = "Please, support this project by citing it in your publications!",
+  title = "PakPMICS2018: Multiple Indicator Cluster Survey (MICS) 2017-18 Data for Punjab, Pakistan",
+	author = "Muhammad Yaseen",
+  year = 2019,
+  journal = "The Comprehensive R Archive Network (CRAN)",
+)
