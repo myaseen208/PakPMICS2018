@@ -10,7 +10,6 @@ Copyright: 2019-2020, UAF
 License: GPL-2 | GPL-3
 Encoding: UTF-8
 LazyData: true
-VignetteBuilder: R.rsp
 NeedsCompilation: no
 RoxygenNote: 7.3.2
 URL: https://myaseen208.com/PakPMICS2018/
@@ -22,3 +21,4 @@ Imports: tibble
 Suggests: 
     testthat,
     R.rsp
+VignetteBuilder: R.rsp
