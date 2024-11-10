@@ -1,12 +1,14 @@
 
 ## `PakPMICS2018`: Multiple Indicator Cluster Survey (MICS) 2017-18 Data for Punjab, Pakistan
 
-###### Version : [1.1.0](https://myaseen208.com/PakPMICS2018/); Copyright (C) 2019-2020: [UAF](https://web.uaf.edu.pk/); License: [GPL-2\|GPL-3](https://www.r-project.org/Licenses/)
+###### Version : [1.2.0](https://myaseen208.com/PakPMICS2018/); License: [GPL-3](https://www.r-project.org/Licenses/)
 
-##### *Muhammad Yaseen*
+##### *Muhammad Yaseen<sup>1,2</sup>*
 
-Department of Mathematics and Statistics, University of Agriculture
-Faisalabad, Pakistan.
+1.  School of Mathematical & Statistical Sciences, Clemson University,
+    Clemson, South Carolina, USA
+2.  Department of Mathematics & Statistics, University of Agriculture
+    Faisalabad, Pakistan
 
 ------------------------------------------------------------------------
 
@@ -19,14 +21,14 @@ v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/PakPMICS2018?color=green)](https://CRAN.R-project.org/package=PakPMICS2018)
 <!-- [![packageversion](https://img.shields.io/badge/Package%20version-0.2.3.3-orange.svg)](https://github.com/myaseen208/PakPMICS2018) -->
 
-[![develVersion](https://img.shields.io/badge/devel%20version-1.0.0-orange.svg)](https://github.com/myaseen208/PakPMICS2018)
+[![develVersion](https://img.shields.io/badge/devel%20version-1.1.0-orange.svg)](https://github.com/myaseen208/PakPMICS2018)
 
 <!-- [![GitHub Download Count](https://github-basic-badges.herokuapp.com/downloads/myaseen208/PakPMICS2018/total.svg)] -->
 
 [![Project Status:
 WIP](http://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2024--09--13-yellowgreen.svg)](https://github.com/myaseen208/PakPMICS2018)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2024--11--10-yellowgreen.svg)](https://github.com/myaseen208/PakPMICS2018)
 
 ------------------------------------------------------------------------
 
@@ -50,8 +52,7 @@ second household to all men age 15-49 years; (5) an under-5
 questionnaire, administered to mothers (or caretakers) of all children
 under 5 living in the household; and (6) a questionnaire for children
 age 5-17 years, administered to the mother (or caretaker) of one
-randomly selected child age 5-17 years living in the household
-(<http://mics.unicef.org/surveys/>).
+randomly selected child age 5-17 years living in the household.
 
 ## Installation
 

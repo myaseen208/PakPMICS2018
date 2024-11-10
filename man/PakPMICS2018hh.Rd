@@ -358,7 +358,7 @@ A data frame with 53840 rows and 330 variables:
 }
 \references{
 \enumerate{
-  \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
+  \item UNICEF MICS.
  }
 }
 \author{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/PakPMICS2018fs.R
 \name{PakPMICS2018fs}
 \alias{PakPMICS2018fs}
-\title{Multiple Indicator Cluster Survey (MICS) 2018 Children Age 5-17 Questionnaire Data for Punjab, Pakistan}
+\title{Multiple Indicator Cluster Survey (MICS) 2018 Child Labor data from a selected child for Punjab, Pakistan}
 \format{
 A data frame with 37052 rows and 276 variables:
 \describe{
@@ -304,7 +304,7 @@ A data frame with 37052 rows and 276 variables:
 }
 \references{
 \enumerate{
-  \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
+  \item UNICEF MICS.
  }
 }
 \author{

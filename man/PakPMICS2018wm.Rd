@@ -2,7 +2,7 @@
 % Please edit documentation in R/PakPMICS2018wm.R
 \name{PakPMICS2018wm}
 \alias{PakPMICS2018wm}
-\title{Multiple Indicator Cluster Survey (MICS) 2018 Child Questionnaire Data for Punjab, Pakistan}
+\title{Multiple Indicator Cluster Survey (MICS) 2018 Women Data for Punjab, Pakistan}
 \format{
 A data frame with 157899 rows and 62 variables:
 \describe{
@@ -429,7 +429,7 @@ A data frame with 157899 rows and 62 variables:
   }
 }
 \description{
-\code{PakPMICS2018wm} data of Child questionnaire, MICS Punjab, 2014.
+\code{PakPMICS2018wm} data of Women, MICS Punjab, 2014.
 }
 \examples{
 # Loading PakPMICS2018wm
@@ -442,7 +442,7 @@ A data frame with 157899 rows and 62 variables:
 }
 \references{
 \enumerate{
-  \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
+  \item UNICEF MICS.
  }
 }
 \author{

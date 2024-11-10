@@ -348,7 +348,7 @@
 #'
 #' @references
 #' \enumerate{
-#'   \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
+#'   \item UNICEF MICS.
 #'  }
 #'
 #' @import tibble

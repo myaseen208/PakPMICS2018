@@ -1,6 +1,6 @@
-#' @title Multiple Indicator Cluster Survey (MICS) 2018 Child Questionnaire Data for Punjab, Pakistan
 #' @name  PakPMICS2018bh
-#' @description \code{PakPMICS2018bh} data of Child questionnaire, MICS Punjab, 2014.
+#' @title Multiple Indicator Cluster Survey (MICS) 2018 Birth History of Children Questionnaire Data for Punjab, Pakistan
+#' @description \code{PakPMICS2018bh} data of Birth History of Children questionnaire, MICS Punjab, 2014.
 #' @format A data frame with 157899 rows and 62 variables:
 #' \describe{
 #'    \item{\code{HH1}}{Cluster number}
@@ -74,7 +74,7 @@
 #'
 #' @references
 #' \enumerate{
-#'  \item UNICEF MICS (\url{http://mics.unicef.org/surveys}).
+#'  \item UNICEF MICS
 #'  }
 #'
 #' @import tibble
