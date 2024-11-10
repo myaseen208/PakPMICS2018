@@ -2,7 +2,7 @@ pandoc: '3.5'
 pkgdown: 2.1.1.9000
 pkgdown_sha: 0a18bc718640aee7160a0ebbcdef5ecaae2ac4a4
 articles: {}
-last_built: 2024-11-10T16:38Z
+last_built: 2024-11-10T16:44Z
 urls:
   reference: https://myaseen208.com/PakPMICS2018/reference
   article: https://myaseen208.com/PakPMICS2018/articles

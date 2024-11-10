@@ -1,3 +1,8 @@
+# PakPMICS2018 1.2.0
+## New Features 
+
+* Some typos in documentations are corrected (thanks to Zahid Asghar).
+
 # PakPMICS2018 1.1.0
 ## New Features 
 
